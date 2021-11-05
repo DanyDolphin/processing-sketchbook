@@ -6,7 +6,6 @@
 package processingsketchbook;
 import java.util.Random;
 import processing.core.PApplet;
-import processingsketchbook.utilities.GifFactory;
 
 /**
  *
@@ -23,11 +22,9 @@ public class RandomDashes extends PApplet {
     int currentDashCount;
     int currentRotation;
     
-    GifFactory gifFactory;
     
     public void settings() {
         size(600, 600);
-        gifFactory = new GifFactory(this, "RandomDashes2.gif");
     }
     
     public void setup() {
@@ -54,14 +51,6 @@ public class RandomDashes extends PApplet {
         
         if (currentDashCount < DASH_COUNT - 1) {
             currentDashCount++;
-        }
-        
-        if (frameCount > FRAMERATE * 10 && frameCount < FRAMERATE * 15) {
-            saveFrame("randomDashes/#######.png");
-            gifFactory.addFrame(1000 / FRAMERATE);
-        }
-        if (frameCount == FRAMERATE * 15) {
-            gifFactory.save();
         }
             
     }
