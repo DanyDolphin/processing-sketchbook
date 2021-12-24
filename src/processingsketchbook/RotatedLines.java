@@ -23,7 +23,6 @@ public class RotatedLines extends PApplet {
   public void settings() {
     size(600, 600);
     circles = new LinkedList<>();
-    float radius = 50;
     circles.add(new RotatedCircle(1000));
   }
 
@@ -48,7 +47,7 @@ public class RotatedLines extends PApplet {
     }
 
     if (frameCount > FRAMERATE * 15 && frameCount < FRAMERATE * 35) {
-      saveFrame("rotatedlines/#######.tif");
+      saveFrame("rotatedlines2/bw-####.png");
     }
   }
 

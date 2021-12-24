@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/dan/processing-3.5.4/core/library/core.jar"
+    ]
+}
